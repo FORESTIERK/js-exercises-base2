@@ -6,7 +6,13 @@
 </head>
 <body>
   <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
+    <label for="nom">Votre nom  : </label><input onkeypress="champ()" type="text" name="nom" value="" id="nom" />
   </form>
+  <script>
+    var nom = document.getElementById('nom');
+    function champ(){
+      alert("Bravo ! Tu as cliquez sur une touche de ton clavier !");
+    }
+  </script>
 </body>
 </html>

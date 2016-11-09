@@ -6,11 +6,58 @@
   </head>
   <body>
     <div class="conteneur">
-      <img src="images/image1.jpg" id="image1" />
-      <img src="images/image2.jpg" id="image2" />
-      <img src="images/image3.jpg" id="image3" />
-      <img src="images/image4.jpg" id="image4" />
-      <img src="images/image5.jpg" id="image5" />
+      <img  src="images/image1.jpg" onmouseover="photo1()" id="image1" />
+      <img  src="images/image2.jpg" onmouseover="photo2()" id="image2" />
+      <img  src="images/image3.jpg" onmouseover="photo3()" id="image3" />
+      <img  src="images/image4.jpg" onmouseover="photo4()" id="image4" />
+      <img  src="images/image5.jpg" onmouseover="photo5()" id="image5" />
+      <img  src="images/image1_2.jpg" onmouseout="image1()" id="image1_2" />
+      <img  src="images/image2_2.jpg" onmouseout="image2()" id="image2_2" />
+      <img  src="images/image3_2.jpg" onmouseout="image3()" id="image3_2" />
+      <img  src="images/image4_2.jpg" onmouseout="image4()" id="image4_2" />
+      <img  src="images/image5_2.jpg" onmouseout="image5()" id="image5_2" />
     </div>
+    <script>
+    //IMAGE 1
+    var i1 = document.getElementById('image1');
+    var i1_2 = document.getElementById('image1_2')
+
+    function photo1(){
+      i1.style.display = "none";
+      i1_2.style.display = "block";
+    }
+    //IMAGE 2
+    var i2 = document.getElementById('image2');
+    var i2_2 = document.getElementById('image2_2')
+
+    function photo2(){
+      i2.style.display = "none";
+      i2_2.style.display = "block";
+    }
+    //IMAGE 3
+    var i3 = document.getElementById('image3');
+    var i3_2 = document.getElementById('image3_2')
+
+    function photo3(){
+      i3.style.display = "none";
+      i3_2.style.display = "block";
+    }
+    //IMAGE 4
+    var i4 = document.getElementById('image4');
+    var i4_2 = document.getElementById('image4_2')
+
+    function photo4(){
+      i4.style.display = "none";
+      i4_2.style.display = "block";
+    }
+    //IMAGE 5
+    var i5 = document.getElementById('image5');
+    var i5_2 = document.getElementById('image5_2')
+
+    function photo5(){
+      i5.style.display = "none";
+      i5_2.style.display = "block";
+    }
+    </script>
   </body>
 </html>
